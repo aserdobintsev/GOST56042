@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GOST56042"
-  s.version      = "0.9.0"
+  s.version      = "0.1.0"
   s.summary      = "Library for working with Russian Standard GOST R 56042-2014."
   s.description  = <<-DESC
 Library for working with Russian Standard "**GOST R 56042-2014** Standards of financial transactions. Two-dimensional barcode symbols for payments by individuals" [ГОСТ Р 56042-2014].
