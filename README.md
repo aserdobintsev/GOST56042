@@ -107,7 +107,6 @@ $ swift test
 
 ## Todo
 
-* Add GitHub Actions for launching unit tests on PRs
 * Review parsing `strict` mode
 * Add parsing option for handling 'null' or 'NULL' values
 * Add `verification` parsing mode or separate method
