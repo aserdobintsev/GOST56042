@@ -6,13 +6,6 @@ on:
       - main
 
 jobs:
-  tests_linux:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Test on linux
-      run: swift test
-
   tests_macos:
     runs-on: macos-latest
     steps:
