@@ -1,0 +1,21 @@
+name: Swift
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  tests_macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Test on macos
+      run: swift test
+
+  tests_ios:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Test on iOS
+      run: xcodebuild -scheme GOST56042 clean build test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11' -configuration Debug | xcpretty

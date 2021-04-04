@@ -105,9 +105,14 @@ Alternatively, run tests with the following command:
 $ swift test
 ```
 
+Or using **xcodebuild**:
+
+```bash
+$ xcodebuild -scheme GOST56042 clean build test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11' -configuration Debug
+```
+
 ## Todo
 
-* Add GitHub Actions for launching unit tests on PRs
 * Review parsing `strict` mode
 * Add parsing option for handling 'null' or 'NULL' values
 * Add `verification` parsing mode or separate method
