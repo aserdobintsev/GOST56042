@@ -105,6 +105,12 @@ Alternatively, run tests with the following command:
 $ swift test
 ```
 
+Or using **xcodebuild**:
+
+```bash
+$ xcodebuild -scheme GOST56042 clean build test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11' -configuration Debug
+```
+
 ## Todo
 
 * Review parsing `strict` mode
